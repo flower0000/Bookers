@@ -1,0 +1,7 @@
+<%= flash[:success] %>
+<p><strong>Title:</strong><%= @book.title %></p>
+<!-- コントローラーのshowアクションから，@Bookを受け取っている -->
+<p><strong>Body:</strong><%= @book.body %></p>
+
+<%= link_to "Edit", edit_book_path(@book.id) %>
+<%= link_to"Back", books_path %>
